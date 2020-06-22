@@ -15,6 +15,12 @@ Run container
 
 docker run -d -p 6633:6633 -p 8181:8181 -p 8101:8101 --name=opendaylight ljm625/opendaylight:sodium
 
+OR
+
+Use the host network mode (means you don't need port mapping commands)
+
+docker run -d --net host --name=opendaylight ljm625/opendaylight:sodium
+
 ## Access Opendaylight karaf CLI
 ssh -p 8101 karaf@localhost Default password is "karaf"
 

@@ -1,5 +1,5 @@
 # opendaylight-docker
-docker for opendaylight solium
+docker for opendaylight Magnesium
 
 special thanks to glefevre
 
@@ -13,7 +13,7 @@ Exposed port 6633 (Openflow), 8181 (WebUI/REST api) & 8101 (karaf CLI)
 ## How to use it ?
 Run container
 
-docker run -d -p 6633:6633 -p 8181:8181 -p 8101:8101 --name=opendaylight ljm625/opendaylight:sodium
+docker run -d -p 6633:6633 -p 8181:8181 -p 8101:8101 --name=opendaylight ljm625/opendaylight:magnesium
 
 ## Access Opendaylight karaf CLI
 ssh -p 8101 karaf@localhost Default password is "karaf"
